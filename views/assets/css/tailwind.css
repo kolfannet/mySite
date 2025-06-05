@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Syne+Mono&display=swap" rel="stylesheet');
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-mono: "Roboto Mono", sans-serif;
+  --font-syne: "Syne Mono", sans-serif;
+}
+
+.wrapper {
+  @apply max-w-3xl m-auto px-3;
+}
+
+.text p {
+  @apply pb-2;
+}
+
+a {
+  @apply text-sky-500 dark:text-sky-500;
+}
+
+h1 {
+    @apply text-xl font-bold pb-2;
+}
+
+h3 {
+    @apply text-lg font-bold py-2 text-gray-600 dark:text-gray-400;
+}
