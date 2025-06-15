@@ -15,9 +15,9 @@ export default function (eleventyConfig) {
 			limit: 10,     // 0 means no limit
 		},
 		metadata: {
-			language: "en",
+			language: "cs",
 			title: "blog",
-			subtitle: "my personal website",
+			subtitle: "můj osobní blog",
 			base: "https://kolfan.net/",
 			author: {
 				name: "František",
@@ -27,7 +27,7 @@ export default function (eleventyConfig) {
 	});
 
     // FILTERS
-    eleventyConfig.addFilter("postDate", (dateObj, format = "DDD", locale = "en") => {
+    eleventyConfig.addFilter("postDate", (dateObj, format = "DDD", locale = "cs") => {
         return DateTime.fromJSDate(dateObj).setLocale(locale).toFormat(format);
     });
 

@@ -3,7 +3,7 @@
 {% block content %}
 <article>
 <div class="text-lg font-semibold font-syne uppercase">{{ title }}</div>
-<div class="text-gray-600 dark:text-gray-400 pb-2 text-sm">{{ page.date | postDate }}</div>
+<div class="text-gray-600 pb-2 text-sm">{{ page.date | postDate }}</div>
 <div class="text">{{ content | safe }}</div>
 </article>
 {% include "partials/pagination.njk" %}
